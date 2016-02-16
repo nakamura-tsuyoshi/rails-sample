@@ -1,0 +1,7 @@
+development:
+    host: 54.238.241.179
+    port: 9200
+
+production:
+   host: localhost
+   port: 9200

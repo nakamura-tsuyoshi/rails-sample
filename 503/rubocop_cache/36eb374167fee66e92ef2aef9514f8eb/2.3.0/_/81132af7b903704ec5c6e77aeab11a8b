@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":58,"end_pos":59},"message":"Extra blank line detected.","cop_name":"Style/EmptyLines","status":"uncorrected"}]

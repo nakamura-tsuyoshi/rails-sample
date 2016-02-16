@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":49,"end_pos":52},"message":"Assignment Branch Condition size for kuromoji is too high. [17.12/15]","cop_name":"Metrics/AbcSize","status":"unsupported"},{"severity":"convention","location":{"begin_pos":49,"end_pos":52},"message":"Method has too many lines. [30/10]","cop_name":"Metrics/MethodLength","status":"unsupported"}]

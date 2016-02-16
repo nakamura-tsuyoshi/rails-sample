@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":232,"end_pos":288},"message":"Avoid using `rescue` in its modifier form.","cop_name":"Style/RescueModifier","status":"uncorrected"}]

@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":49,"end_pos":52},"message":"Method has too many lines. [12/10]","cop_name":"Metrics/MethodLength","status":"unsupported"},{"severity":"convention","location":{"begin_pos":442,"end_pos":443},"message":"Avoid comma after the last item of a hash.","cop_name":"Style/TrailingCommaInLiteral","status":"uncorrected"}]

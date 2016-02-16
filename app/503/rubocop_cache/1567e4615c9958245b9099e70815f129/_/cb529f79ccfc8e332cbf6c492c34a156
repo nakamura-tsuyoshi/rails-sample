@@ -1,0 +1,1 @@
+[{"severity":"error","location":{"begin_pos":800,"end_pos":800},"message":"unexpected token $end\n(Using Ruby 2.0 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)","cop_name":"Syntax","status":"uncorrected"}]

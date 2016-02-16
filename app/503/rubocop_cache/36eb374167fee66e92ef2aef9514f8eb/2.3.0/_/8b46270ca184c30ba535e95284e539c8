@@ -1,0 +1,1 @@
+[{"severity":"error","location":{"begin_pos":445,"end_pos":446},"message":"unexpected token tNL\n(Using Ruby 2.0 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)","cop_name":"Syntax","status":"uncorrected"}]

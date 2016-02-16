@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":87,"end_pos":88},"message":"Surrounding space missing for operator `=`.","cop_name":"Style/SpaceAroundOperators","status":"uncorrected"},{"severity":"convention","location":{"begin_pos":115,"end_pos":116},"message":"Do not use semicolons to terminate expressions.","cop_name":"Style/Semicolon","status":"uncorrected"}]

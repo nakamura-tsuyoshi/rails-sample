@@ -1,0 +1,65 @@
+<h1>Makuake Search</h1>
+<p>日本語形態素解析で検索</p>
+<form action="" method="get" class="well form-inline">
+  <div class="form-group col-xs-4">
+      <input type="text" class="form-control" name="query" id="query" value="<%= @query %>">
+  </div>
+
+  <div class="form-group">
+    <button type="submit" class="btn"> 検 索 </button>
+  </div>
+</form>
+
+
+<div class="row">
+<% if @result %>
+  <h2>検索結果 <%= @total %>件ヒット</h2>
+  <% @result.each do |item| %>
+    <div class="row">
+      <div class="col-xs-9 col-md-4">
+          <a href="https://www.makuake.com/project/<%= item['_source']['project_code'] %>/" target="_blank">
+              <img src="//s3-ap-northeast-1.amazonaws.com/static.makuake-ca.com/upload/project/<%= item['_source']['project_id'] %>/main_<%= item['_source']['project_id'] %>_690_388.<%= item['_source']['main_image_ext'] %>" width="200">
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-8">
+          <% if item['highlight']['title'] %>
+            <h4>プロジェクトタイトル</h4>
+            <% item['highlight']['title'].each do |highlight_title| %>
+              <p><%= highlight_title.html_safe  %></p>
+            <% end %>
+          <% end %>
+
+          <% if item['highlight']['detail'] %>
+          <h4>プロジェク本文</h4>
+            <% item['highlight']['detail'].each do |highlight_detail| %>
+              <p><%= highlight_detail.html_safe  %></p>
+              <hr>
+            <% end %>
+          <% end %>
+
+
+          <% if item['highlight']['returns.return_title'] %>
+          <h4>リターンタイトル</h4>
+            <% item['highlight']['returns.return_title'].each do |highlight_return_title| %>
+              <p><%= highlight_return_title.html_safe  %></p>
+              <hr>
+            <% end %>
+          <% end %>
+
+
+          <% if item['highlight']['returns.contents'] %>
+          <h4>リターン本文</h4>
+            <% item['highlight']['returns.contents'].each do |highlight_contents| %>
+              <p><%= highlight_contents.html_safe  %></p>
+              <hr>
+            <% end %>
+          <% end %>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+  <% end %>
+  <%= paginate @result %>
+<% end %>
+</div>

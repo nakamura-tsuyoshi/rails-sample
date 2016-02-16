@@ -1,0 +1,1 @@
+[{"severity":"error","location":{"begin_pos":495,"end_pos":496},"message":"unexpected token tCOLON\n(Using Ruby 2.0 parser; configure using `TargetRubyVersion` parameter, under `AllCops`)","cop_name":"Syntax","status":"uncorrected"}]

@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":75,"end_pos":78},"message":"Method has too many lines. [20/10]","cop_name":"Metrics/MethodLength","status":"unsupported"},{"severity":"warning","location":{"begin_pos":92,"end_pos":97},"message":"Useless assignment to variable - `query`.","cop_name":"Lint/UselessAssignment","status":"unsupported"}]

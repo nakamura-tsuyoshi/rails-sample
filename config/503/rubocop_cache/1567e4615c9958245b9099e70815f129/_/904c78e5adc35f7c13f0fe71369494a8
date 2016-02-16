@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":208,"end_pos":209},"message":"Extra blank line detected.","cop_name":"Style/EmptyLines","status":"uncorrected"},{"severity":"convention","location":{"begin_pos":329,"end_pos":330},"message":"1 trailing blank lines detected.","cop_name":"Style/TrailingBlankLines","status":"uncorrected"}]

@@ -1,0 +1,1 @@
+[{"severity":"convention","location":{"begin_pos":49,"end_pos":52},"message":"Method has too many lines. [22/10]","cop_name":"Metrics/MethodLength","status":"unsupported"},{"severity":"convention","location":{"begin_pos":359,"end_pos":392},"message":"Incorrect indentation detected (column 2 instead of 23).","cop_name":"Style/CommentIndentation","status":"uncorrected"}]

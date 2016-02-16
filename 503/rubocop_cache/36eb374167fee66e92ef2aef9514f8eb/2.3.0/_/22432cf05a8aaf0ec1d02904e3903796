@@ -1,0 +1,1 @@
+[{"severity":"warning","location":{"begin_pos":83,"end_pos":86},"message":"Useless assignment to variable - `aaa`.","cop_name":"Lint/UselessAssignment","status":"unsupported"},{"severity":"convention","location":{"begin_pos":87,"end_pos":88},"message":"Surrounding space missing for operator `=`.","cop_name":"Style/SpaceAroundOperators","status":"uncorrected"}]
