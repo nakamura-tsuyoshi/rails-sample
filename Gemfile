@@ -61,3 +61,7 @@ gem 'jquery-turbolinks'
 gem 'rails4-autocomplete'
 gem 'jquery-ui-rails', github: 'joliss/jquery-ui-rails', branch: 'rails-4.0.2'
 gem 'unicorn'
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+  gem 'factory_girl_rails', '~> 3.0'
+end
