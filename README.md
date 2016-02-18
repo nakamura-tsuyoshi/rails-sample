@@ -41,3 +41,26 @@
  [dev@host ~]$ rbenv versions
   2.3.0
  ```
+ 1. ruby2.3.0を使う設定
+ ```
+ [dev@host ~]$ rbenv global 2.3.0
+ ```
+ 
+ 1. 確認
+ ```
+ [dev@host ~]$ rbenv version
+ 2.3.0 (set by /home/dev/.rbenv/version)
+ ```
+ 
+ 1. bundlerインストール
+ ```
+ [dev@host ~]$ gem install bundler
+ ```
+ 
+ 1. このレポジトリをcloneしてbundle install
+ ```
+ [dev@host rails-sample]$ bundle install
+ ```
+
+1. elasticsearch
+ 1. wip
