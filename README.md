@@ -51,7 +51,8 @@
  [dev@host ~]$ rbenv version
  2.3.0 (set by /home/dev/.rbenv/version)
  ```
- 
+
+1. bundler
  1. bundlerインストール
  ```
  [dev@host ~]$ gem install bundler
