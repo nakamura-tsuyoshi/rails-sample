@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/nakamura-tsuyoshi/rails-sample.svg?branch=master)](https://travis-ci.org/nakamura-tsuyoshi/rails-sample)
+
 # 初めに目的とか
 * まぁともかくrailsを触ってみよう。触っていくなかで良し悪しを語ろうと。
 * 今のプロダクトに活かせる部分を探す。良ければリプレイスも考えていきたい
