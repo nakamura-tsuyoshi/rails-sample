@@ -3,11 +3,14 @@
 set -e
 
 TIMEOUT=30
-APP_ROOT="/usr/local/nginx/rails/prototype"
-PID=${APP_ROOT}/tmp/production_unicorn.pid
+APP_ROOT="/usr/local/nginx/rails-sample"
 
+#RAILS_ENV=development
 RAILS_ENV=production
+PID=${APP_ROOT}/tmp/${RAILS_ENV}_unicorn.pid
+
 CMD="bundle exec unicorn -D -c $APP_ROOT/config/unicorn.rb -E $RAILS_ENV"
+
 action="$1"
 set -u
 
@@ -25,20 +28,21 @@ oldsig () {
 
 case $action in
 start)
-    sig 0 && echo >&2 "Already running" && exit 0
+    sig 0 && echo -e >&2 "\033[32mAlready running\033[m" && exit 0
     $CMD
+    echo -e "\033[32mstarted\033[m"
     ;;
 stop)
-    sig QUIT && rm -f ${PID} && exit 0
-    echo >&2 "Not running"
+    sig QUIT && rm -f ${PID} && echo -e >&2 "\033[32mstoped\033[m"  && exit 0
+    echo -e >&2 "\033[32mNot running\033[m"
     ;;
 force-stop)
-    sig TERM && exit 0
-    echo >&2 "Not running"
+    sig TERM && echo -e >&2 "\033[32mforce-stoped\033[m" && exit 0
+    echo -e >&2 "\033[32mNot running\033[m"
     ;;
 restart|reload)
-    sig HUP && echo reloaded OK && exit 0
-    echo >&2 "Couldn't reload, starting '$CMD' instead"
+    sig HUP && echo -e "\033[32mreloaded OK\033[m" && exit 0
+    echo -e >&2 "\033[31mCouldn't reload, starting '$CMD' instead\033[m"
     $CMD
     ;;
 upgrade)
